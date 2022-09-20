@@ -29,7 +29,7 @@ body {
   input, textarea, #dropdown {
     width: 100%;
     height: 35px;
-    padding: 8px;
+    padding: 0px 10px;
     margin: 5px 0px;
     border-radius: 6px;
     border: none;
