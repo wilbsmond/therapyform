@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Therapy signup</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1 id="title">Sign up for a therapy session</h1>
+    <p id="description">Help us assign which therapist would suit you best for your therapy session</p>
+  </header>
+  
+  <form id="survey-form">
+    <label id="name-label" for="name">Name <input id="name" type="text" required placeholder="Enter your name"></label>
+    <label id="email-label" for="email">Email <input id="email" type="email" required placeholder="Enter your email"></label>
+    <label id="number-label" for="number">Age <input name="age" id="number" type="number" min="13" max="100" placeholder="Age">
+
+    <div class="gender-radio">
+        <label>What is your gender?</label>
+        <label for="male-gender"><input id="male-gender" value="male-gender" type="radio" name="gender" class="inline"> Male</label>
+        <label for="female-gender"><input id="female-gender" value="male-gender" type="radio" name="gender" class="inline"> Female</label>
+        <label for="other-gender"><input id="other-gender" value="male-gender" type="radio" name="gender" class="inline"> Other</label>
+    </div>
+
+    <div class="problem-checkbox">
+        <label>What are some of your problems you want to address? <span class="clue">(Check all that apply)</span></label>
+        <label><input value="depression-problem" name="problem" type="checkbox" class="inline"> Depression</label>
+        <label><input value="anxiety-problem" name="problem" type="checkbox" class="inline"> Anxiety</label>
+        <label><input value="stress-problem" name="problem" type="checkbox" class="inline"> Stress</label>
+    </div>
+
+    <div class="dropdown-price">
+        <label>Based on your situation, how much can you afford to pay for one session?
+        <select id="dropdown">
+        <option disabled selected>Select price range</option>
+        <option> <€25</option>
+        <option> €25 - 50</option>
+        <option> €50 - 100</option>
+        <option> > €100</option>
+        </select>
+        </label>
+    </div>
+
+    <div class="elaboration-textarea">
+        <label>Please explain what kind of therapist and therapy style you prefer<span class="clue"> (Optional)</span></label>
+        <label for="therapy-preference"> 
+        <textarea id="therapy=preference"></textarea>
+        </label>
+    </div>
+
+    <input id="submit" type="submit">
+
+  </form>
+</body>
+</html>
